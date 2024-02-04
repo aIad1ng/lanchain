@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>RAG 应用</title>
+</head>
+<body>
+    <h1>欢迎使用 RAG 应用</h1>
+    <p>你可以在下面的输入框中输入任何你感兴趣的问题，然后点击提交按钮，我会尽力为你生成一个合理的回答。</p>
+    <form action="/rag" method="post">
+        <input type="text" name="query" placeholder="请输入你的问题">
+        <input type="submit" value="提交">
+    </form>
+    <p>你的问题是：{ { request }}</p>
+    <p>我的回答是：{ { response }}</p>
+</body>
+</html>
